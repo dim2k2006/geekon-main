@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	    	box-sizing: border-box;
+}
+
+html, body {
+	height:100%;
+}
+
+body {
+	width: 100%;
+	font-weight: 300;
+	font-family: $font-family-default;
+	font-size: $font-size-default;
+	line-height: 1.4;
+	color: $color-primary;
+	background: $color-white;
+	overflow: hidden;
+}
+
+h1 {
+	margin: 1.2em 0;
+	font-weight: 400;
+	font-size: $font-size-large;
+	line-height: $font-size-large;
+	color: $color-gray;
+	text-transform: uppercase;
+
+	@include respond-to('big') {
+		margin: .5em 0;
+	}
+
+	@include respond-to('small') {
+		margin-top: 0;
+		font-size: $font-size-large * 0.8;
+		line-height: $font-size-large * 1;
+	}
+}
+
+h3 {
+	font-weight: 400;
+	font-size: $font-size-medium;
+	line-height: $font-size-medium * 1.4;
+	color: $color-secondary;
+}

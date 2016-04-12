@@ -1,0 +1,37 @@
+// Font-family
+$font-family-default: 'Roboto', Arial, Helvetica, sans-serif;
+
+// Font-size
+$font-size-small: 14px;
+$font-size-default: 16px;
+$font-size-medium: 20px;
+$font-size-large: 36px;
+
+// Color
+$color-primary: #575757;
+$color-secondary: #565656;
+$color-gray: #333333;
+$color-brown: #BB9977;
+$color-white: #FFF;
+
+// Breakpoints 
+$breakpoints: (
+	'small' : (max-width: 480px),
+	'medium': (max-width: 640px),
+	'prebig': (max-width: 767px),
+	'big': (max-width: 800px),
+	'intermediary': (max-width: 960px),
+	'increasead': (max-width: 1040px),
+	'huge': (max-width: 1260px),
+	'ultrahuge': (max-width: 1400px),
+	'premonsterhuge': (max-width: 1717px),
+	'monsterhuge': (max-width: 2000px)
+);
+
+// Grid
+$susy: (
+  columns: 12,
+  container: 3000px,
+  gutters: 1/4,
+  global-box-sizing: border-box
+);

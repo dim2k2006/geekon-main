@@ -1,0 +1,94 @@
+.content {
+	position: relative;
+	height: 100%;
+
+	&__col {
+		position: absolute;
+		width: 50%;
+		height: 100%;
+		top: 0;
+		left: 0;
+
+		@include respond-to('increasead') {
+			width: 40%;
+		}
+
+		@include respond-to('medium') {
+			width: 0;
+		}
+	}
+
+	&__col + &__col {
+		left: 50%;
+		padding-top: 50px;
+    	padding-left: 66px;
+    	padding-right: 66px;
+		overflow-y: scroll;
+
+		@include respond-to('increasead') {
+			width: 60%;
+			left: 40%;
+		}
+
+		@include respond-to('big') {
+			padding-top: 25px;
+			padding-left: 33px;
+    		padding-right: 33px;
+		}
+
+		@include respond-to('medium') {
+			width: 100%;
+			left: 0;
+		}
+
+		@include respond-to('small') {
+			padding-top: 15px;
+			padding-left: 15px;
+    		padding-right: 15px;
+		}
+	}
+
+	&__col_left {
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-color: #FFF;
+		background-size: cover;
+	}
+
+	&__col_left:after {
+		content: '';
+		position: absolute;
+		display: block;
+		width: 3px;
+		height: 100%;
+		top: 0;
+		right: 0;
+		background-color: #bb9977;
+	}
+
+	#experience &__col_left:after {
+		background-color: #383838;
+	}
+
+	#portfolio &__col_left:after {
+		background-color: #383838;
+	}
+
+	#shri &__col_left:after {
+		background-color: #383838;
+	}
+
+	&__col_right {
+		padding-bottom: 20px;
+
+		@include respond-to('small') {
+			padding-bottom: 15px;
+		}
+	}
+
+	&:after {
+		content: '';
+		display: table;
+		width: 100%;
+	}
+}
