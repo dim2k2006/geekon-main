@@ -1,14 +1,31 @@
 +b('section').content(id='home')
-	+e.col._left(style='background-image: url(images/bg-home.jpg);')
-	+e.col._right
-		h1 немного О себе
+    +e.col._left(style='background-image: url(images/bg-home.jpg);')
+    +e.col._right
+        h1 Hello!
 
-		h3 Здравствуйте, я Дмитрий Малофеев!
+        h3 My name is Dmitry Malofeev!
 
-		p Родом из города Рига, Латвийская Республика. В Беларусь переехал с семьей в возрасте 5 лет. Закончил гимназию с иностранным уклоном. Высшее образование получил по специальности «Финансы и банковское дело». В университете очень заинтересовался веб разработкой, изначально изучал все сам, после чего записался на курсы в Образовательный центра парка высоких технологий в городе Минск. Закончил курсы по верстке, серверному программированию и дизайну. По окончании обучения был успешно принят на работу в ЧУП «Лепшей» на должность веб-технолога, где работаю в настоящий момент. В мои обязанности входит верстка html страниц по дизайн-макетам и работа с javascript.
+        p I am a front-end developer. I specialize in web developing. I develop fast and effective web pages. I have a lot of experience in converting PSD to HTML, also know how to develop HTML Emails. I guarantee cross-browser compatibility and clean code. My workflow includes next technology stack:
 
-		p В свободное от работы время стараюсь заниматься активным отдыхом: коньки, роллики, велосипед, сноуборд. Но, когда так не получается провожу время читая техническую или художественную литературу, смотрю кино или сериалы. 
+        +b('ul')
+            +e('li') nodeJS
+            +e('li') Gulp
+            +e('li') Jade
+            +e('li') Sass
+            +e('li') JS
+            +e('li') Git
+            +e('li') Photoshop
 
-		include ../blocks/interests/interests 
+        p I engaged in web development for 2 years. During this time, I successfully completed more than 20 projects, and passed through many training courses, including «School of interfaces developers Yandex in Moscow». You can find some of my projects in the Portfolio section.
 
-		include ../blocks/copyRight/copyRight
+        p My strengths:
+
+        +b('ul')
+            +e('li') Responsibility;
+            +e('li') Attention to details;
+            +e('li') Discipline.
+
+        p
+            strong Ready to cooperate!
+        //include ../blocks/interests/interests
+        include ../blocks/copyRight/copyRight
